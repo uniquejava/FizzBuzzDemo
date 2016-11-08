@@ -24,4 +24,16 @@ class Brain: NSObject {
     func isDivisibleBy(_ divisor: Int, number: Int) -> Bool {
         return number % divisor == 0
     }
+    
+    func check(_ number: Int) -> String {
+        if isDivisibleByFifteen(number) {
+            return "FizzBuzz"
+        } else if isDivisibleByThree(number) {
+            return "Fizz"
+        } else if isDivisibleByFive(number) {
+            return "Buzz"
+        } else {
+            return "\(number)"
+        }
+    }
 }
