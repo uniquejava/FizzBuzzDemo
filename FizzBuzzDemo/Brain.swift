@@ -10,6 +10,10 @@ import Foundation
 
 class Brain: NSObject {
     func isDivisibleByThree(_ number: Int) -> Bool {
-        return true
+        return number % 3 == 0
+    }
+    
+    func isDivisibleByFive(_ number: Int) -> Bool {
+        return number % 5 == 0
     }
 }
