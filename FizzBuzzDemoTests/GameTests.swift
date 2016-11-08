@@ -22,13 +22,12 @@ class GameTests: XCTestCase {
         super.tearDown()
     }
     
-    
     func testGameStartsAtZero() {
         XCTAssertTrue(game.score == 0)
     }
     
     func testOnPlayScoreIncremented() {
-        game.play("1")
+        let _ = game.play("1")
         XCTAssertTrue(game.score == 1)
     }
     
@@ -78,6 +77,12 @@ class GameTests: XCTestCase {
         game.score = 2
         let result = game.play("3")
         XCTAssertEqual(result, false)
+    }
+    
+    func testIfMoveWrongScoreNotIncremented() {
+        game.score = 1
+        let _ = game.play("Fizz")
+        XCTAssertEqual(game.score, 1)
     }
 
     
