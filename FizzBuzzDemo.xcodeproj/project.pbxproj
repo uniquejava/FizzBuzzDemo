@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E309A0E1DD2CA7900E7FBB0 /* ViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E309A0D1DD2CA7900E7FBB0 /* ViewControllerUnitTests.swift */; };
 		2E7004011DD22F0D007CFEF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7004001DD22F0D007CFEF8 /* AppDelegate.swift */; };
 		2E7004031DD22F0D007CFEF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7004021DD22F0D007CFEF8 /* ViewController.swift */; };
 		2E7004061DD22F0D007CFEF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7004041DD22F0D007CFEF8 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E309A0D1DD2CA7900E7FBB0 /* ViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUnitTests.swift; sourceTree = "<group>"; };
 		2E7003FD1DD22F0D007CFEF8 /* FizzBuzzDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzzDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7004001DD22F0D007CFEF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E7004021DD22F0D007CFEF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				2E7004171DD22F0D007CFEF8 /* Info.plist */,
 				2E70042E1DD22FA2007CFEF8 /* BrainTests.swift */,
 				2E7004321DD24805007CFEF8 /* GameTests.swift */,
+				2E309A0D1DD2CA7900E7FBB0 /* ViewControllerUnitTests.swift */,
 			);
 			path = FizzBuzzDemoTests;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			files = (
 				2E70042F1DD22FA2007CFEF8 /* BrainTests.swift in Sources */,
 				2E7004331DD24805007CFEF8 /* GameTests.swift in Sources */,
+				2E309A0E1DD2CA7900E7FBB0 /* ViewControllerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +534,7 @@
 				2E7004271DD22F0D007CFEF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E7004281DD22F0D007CFEF8 /* Build configuration list for PBXNativeTarget "FizzBuzzDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +543,7 @@
 				2E70042A1DD22F0D007CFEF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E70042B1DD22F0D007CFEF8 /* Build configuration list for PBXNativeTarget "FizzBuzzDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +552,7 @@
 				2E70042D1DD22F0D007CFEF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
