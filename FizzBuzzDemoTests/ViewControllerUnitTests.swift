@@ -20,7 +20,7 @@ class ViewControllerUnitTests: XCTestCase {
         viewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
         UIApplication.shared.keyWindow?.rootViewController = viewController
         
-        let _ = viewController.view
+        _ = viewController.view
     }
     
     override func tearDown() {
@@ -32,27 +32,27 @@ class ViewControllerUnitTests: XCTestCase {
     }
     
     func testMove1IncrementsScore() {
-        viewController.play("1")
+        viewController.play(.Number)
         let newScore = viewController.gameScore
         XCTAssertEqual(newScore, 1)
     }
     
     func testWrongMoveScoreNotIncremented() {
-        viewController.play("Fizz")
+        viewController.play(.Fizz)
         let newScore = viewController.gameScore
         XCTAssertEqual(newScore, 0)
     }
     
     func testMove2IncrementsScore() {
-        viewController.play("1")
-        viewController.play("2")
+        viewController.play(.Number)
+        viewController.play(.Number)
         let newScore = viewController.gameScore
         XCTAssertEqual(newScore, 2)
     }
     
     func testFizzIncrementsScore() {
         viewController.game?.score = 2
-        viewController.play("Fizz")
+        viewController.play(.Fizz)
         let newScore = viewController.gameScore
         XCTAssertEqual(newScore, 3)
         
@@ -60,14 +60,14 @@ class ViewControllerUnitTests: XCTestCase {
     
     func testBuzzIncrementsScore() {
         viewController.game?.score = 4
-        viewController.play("Buzz")
+        viewController.play(.Buzz)
         let newScore = viewController.gameScore
         XCTAssertEqual(newScore, 5)
     }
     
     func testFizzBuzzIncrementsScore() {
         viewController.game?.score = 14
-        viewController.play("FizzBuzz")
+        viewController.play(.FizzBuzz)
         let newScore = viewController.gameScore
         XCTAssertEqual(newScore, 15)
     }
